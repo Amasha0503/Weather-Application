@@ -1,0 +1,38 @@
+.header-left{
+    display: flex;
+    width: 50%;
+}
+.header-left img{
+    align-items: center;
+    width: 10%;
+    height: 5%;
+}
+.header-left label{
+    color: rgb(1, 14, 26);
+    font-size: 30px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: right;
+    align-content: center;
+
+}
+
+.header-right input{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.main_header_div{ 
+    background-color:rgb(124, 130, 238);
+    display: flex;
+    align-items: center;
+
+}
+
