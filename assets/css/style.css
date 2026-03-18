@@ -1,38 +1,198 @@
-.header-left{
+@font-face {
+    font-family: Gutter_Rust_Italic;
+    src: url("/assets/fonts/Gutter_Rust_Italic.otf");
+}
+
+body{
+    background-color: #29282C;
+}
+
+.main_header_div {
+    /* background-color: #212529; */
     display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header_left_side {
+    display: flex;
+    align-items: center;
     width: 50%;
 }
-.header-left img{
+
+.header_left_side img {
+    width: 20%;
+    height: 10%;
+}
+
+.header_left_side label{
+    font-size: 40px;
+    font-family: Gutter_Rust_Italic;
+    color: #dee2e6;
+}
+
+.page_logo_div {
+    display: flex;
     align-items: center;
+}
+
+.page_logo_div label {
+    color: #020af5;
+    margin-left: 10px;
+}
+
+.page_logo_div img {
     width: 10%;
-    height: 5%;
-}
-.header-left label{
-    color: rgb(1, 14, 26);
-    font-size: 30px;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-
+    height: 10%;
 }
 
-.header-right{
-    display: flex;
-    align-items: center;
+.header_right_side {
     width: 50%;
+    height: 15%;
+    display: flex;
     justify-content: right;
     align-content: center;
-
 }
 
-.header-right input{
-    width: 300px;
-    background-color: rgb(255, 255, 255);
+.header_right_side input{
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 25px;
+    border: none;
+    outline: none;
+    background-color: #ced4da;
+    color: #343a40;
+    font-size: 20px;
+    border-bottom: 1px #54525200 solid;
 }
 
-.main_header_div{ 
-    background-color:rgb(124, 130, 238);
+.display_box {
     display: flex;
-    align-items: center;
-
 }
 
+.weather_status_image_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.weather_details {
+    width: 50%;
+    display: block;
+}
+
+.weather_details span {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+#city_name,
+#country_name,
+#sub_main_temparature,
+#temparature_feel_like,
+#status,
+#date,
+#sun_rise_time,
+#sun_set_time {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+#city_name {
+    font-size: 22px;
+    /* color: #bdbecb; */
+}
+
+#country_name {
+    font-size: 20px;
+}
+
+#main_temparature {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #E5E5E5;
+}
+
+#sub_main_temparature,
+#temparature_feel_like {
+    font-size: 15px;
+}
+
+#status {
+    font-size: 28px;
+    font-weight: 450;
+}
+
+#date {
+    font-size: 19px;
+}
+
+.sun_rise_box,
+.sun_set_box {
+    background-color: #29282C;
+    border-radius: 0.2rem;
+    justify-items: center;
+    width: 50%;
+}
+
+.sun_rise_box span,
+.sun_set_box span {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: context-menu;
+    color: #E5E5E5;
+}
+
+#sun_rise_time,
+#sun_set_time {
+    font-size: 20px;
+    color: #E5E5E5;
+}
+
+.wind_speed_box,
+.humidity_box,
+.cloud_cover_box,
+.uv_index_box,
+.pressure_box,
+.visibility_box {
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.hr {
+    width: 55%;
+    color: #F1F7FB;
+    align-self: center;
+    margin: auto;
+}
+
+.other_details {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.other_details label {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 2%;
+    color: #E5E5E5;
+}
+
+#wind_speed_value,
+#humidity_value,
+#cloud_cover_value,
+#uv_index_value,
+#pressure_value,
+#visibility_value {
+    font-weight: 350;
+    font-size: 23px;
+    color: #E5E5E5;
+}
